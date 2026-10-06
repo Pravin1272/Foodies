@@ -14,7 +14,7 @@ public class FoodsapiApplication {
 		SpringApplication.run(FoodsapiApplication.class, args);
 	}
 	@Bean
-	CommandLineRunner test(@Value("${spring.data.mongodb.uri}") String uri) {
+	CommandLineRunner test(@Value("${spring.mongodb.uri}") String uri) {
 		return args -> {
 			System.out.println("Mongo URI = " + uri);
 		};
