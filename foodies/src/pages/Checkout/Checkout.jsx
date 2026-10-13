@@ -122,7 +122,7 @@ const Checkout = () => {
         try {
 
             const response = await axios.post(
-                "http://localhost:8080/orders/create",
+                "https://foodies-backend-1h8u.onrender.com/orders/create",
                 {
                     address: address,
                     city: city,

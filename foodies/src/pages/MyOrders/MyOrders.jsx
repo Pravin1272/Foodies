@@ -22,7 +22,7 @@ const MyOrders = () => {
         try {
 
             const response = await axios.get(
-                "http://localhost:8080/orders/my",
+                "https://foodies-backend-1h8u.onrender.com/orders/my",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

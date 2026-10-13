@@ -25,7 +25,7 @@ export const Contact = () => {
 
     try {
       await axios.post(
-        "http://localhost:8080/contact/save",
+        "https://foodies-backend-1h8u.onrender.com/contact/save",
         formData
       );
 

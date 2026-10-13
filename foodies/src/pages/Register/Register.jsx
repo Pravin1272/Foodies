@@ -33,7 +33,7 @@ const Register = () => {
 
         try {
             await axios.post(
-                "http://localhost:8080/auth/register",
+                "https://foodies-backend-1h8u.onrender.com/auth/register",
                 {
                     name: name,
                     email: email,

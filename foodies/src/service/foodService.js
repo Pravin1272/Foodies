@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/food/all";
+const API_URL = "https://foodies-backend-1h8u.onrender.com/food/all";
 
 export const fetchFoodList = async () => {
 
@@ -24,7 +24,7 @@ export const fetchFoodDetails = async (id) => {
     try {
 
         const response = await axios.get(
-            `http://localhost:8080/food/${id}`
+            `https://foodies-backend-1h8u.onrender.com/food/${id}`
         );
 
         return response.data;

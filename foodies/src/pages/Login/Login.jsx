@@ -24,7 +24,7 @@ const Login = () => {
         try {
 
             const response = await axios.post(
-                "http://localhost:8080/auth/login",
+                "https://foodies-backend-1h8u.onrender.com/auth/login",
                 {
                     email: email,
                     password: password

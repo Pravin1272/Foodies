@@ -28,7 +28,7 @@ export const CartProvider = ({ children }) => {
         try {
 
             const response = await axios.get(
-                "http://localhost:8080/cart",
+                "https://foodies-backend-1h8u.onrender.com/cart",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -72,7 +72,7 @@ export const CartProvider = ({ children }) => {
         try {
 
             const response = await axios.post(
-                `http://localhost:8080/cart/add/${foodId}`,
+                `https://foodies-backend-1h8u.onrender.com/cart/add/${foodId}`,
                 {},
                 {
                     headers: {
@@ -109,7 +109,7 @@ export const CartProvider = ({ children }) => {
         try {
 
             const response = await axios.put(
-                `http://localhost:8080/cart/increase/${foodId}`,
+                `https://foodies-backend-1h8u.onrender.com/cart/increase/${foodId}`,
                 {},
                 {
                     headers: {
@@ -142,7 +142,7 @@ export const CartProvider = ({ children }) => {
         try {
 
             const response = await axios.put(
-                `http://localhost:8080/cart/decrease/${foodId}`,
+                `https://foodies-backend-1h8u.onrender.com/cart/decrease/${foodId}`,
                 {},
                 {
                     headers: {
@@ -175,7 +175,7 @@ export const CartProvider = ({ children }) => {
         try {
 
             const response = await axios.delete(
-                `http://localhost:8080/cart/remove/${foodId}`,
+                `https://foodies-backend-1h8u.onrender.com/cart/remove/${foodId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -208,7 +208,7 @@ export const CartProvider = ({ children }) => {
         try {
 
             const response = await axios.delete(
-                "http://localhost:8080/cart/clear",
+                "https://foodies-backend-1h8u.onrender.com/cart/clear",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

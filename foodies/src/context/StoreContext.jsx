@@ -12,7 +12,7 @@ export const StoreContextProvider = ({ children }) => {
         try {
 
             const response = await axios.get(
-                "http://localhost:8080/food/all"
+                "https://foodies-backend-1h8u.onrender.com/food/all"
             );
 
             console.log("Food data received:", response.data);
