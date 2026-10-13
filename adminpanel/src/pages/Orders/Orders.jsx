@@ -15,7 +15,7 @@ const Orders = () => {
             setMessage("");
 
             const response = await axios.get(
-                "http://localhost:8080/orders/all"
+                "https://foodies-backend-1h8u.onrender.com/orders/all"
             );
 
             setOrders(response.data);
@@ -46,7 +46,7 @@ const Orders = () => {
         try {
 
             const response = await axios.put(
-                `http://localhost:8080/orders/${orderId}/status`,
+                `https://foodies-backend-1h8u.onrender.com/orders/${orderId}/status`,
                 {
                     status: status
                 }
@@ -92,7 +92,7 @@ const Orders = () => {
         try {
 
             await axios.delete(
-                `http://localhost:8080/orders/${orderId}`
+                `https://foodies-backend-1h8u.onrender.com/orders/${orderId}`
             );
 
             setOrders((previousOrders) =>

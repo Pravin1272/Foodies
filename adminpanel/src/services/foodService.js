@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const API_URL = "http://localhost:8080/food";
+const API_URL = "https://foodies-backend-1h8u.onrender.com/food";
 
 export const addFood = async (foodData, image) => {
 

@@ -11,7 +11,7 @@ export const ListFood = () => {
         try {
 
             const response = await axios.get(
-                "http://localhost:8080/food/all"
+                "https://foodies-backend-1h8u.onrender.com/food/all"
             );
 
             console.log(response.data);
@@ -35,7 +35,7 @@ export const ListFood = () => {
         try {
 
             const response = await axios.delete(
-                `http://localhost:8080/food/delete/${itemid}`
+                `https://foodies-backend-1h8u.onrender.com/food/delete/${itemid}`
             );
 
             if (response.status === 200) {
