@@ -14,7 +14,7 @@ const AdminLogin = () => {
 
         if (password === "admin123") {
 
-            window.location.href = "http://localhost:5175/";
+            window.location.href = "https://foodies-admin-tau.vercel.app";
 
         } else {
 
