@@ -1,3 +1,4 @@
+
 package in.pravinmisal.foodsapi.config;
 
 import org.springframework.context.annotation.Bean;
@@ -10,25 +11,29 @@ public class CorsConfig {
 
     @Bean
     public WebMvcConfigurer corsConfigurer() {
-
         return new WebMvcConfigurer() {
-
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-
                 registry.addMapping("/**")
                         .allowedOrigins(
                                 "http://localhost:5173",
-                                "http://localhost:5174"
+                                "http://localhost:5174",
+                                "http://localhost:5175",
+                                "https://foodies-admin-tau.vercel.app",
+                                "https://foodies-beta-three.vercel.app",
+                                "https://foodies-nm7yhunke-pravin-42bb.vercel.app",
+                                "https://foodies-fgnnsatw2-pravin-42bb.vercel.app"
                         )
                         .allowedMethods(
                                 "GET",
                                 "POST",
                                 "PUT",
                                 "DELETE",
-                                "OPTIONS"
+                                "OPTIONS",
+                                "PATCH"
                         )
-                        .allowedHeaders("*");
+                        .allowedHeaders("*")
+                        .maxAge(3600);
             }
         };
     }
